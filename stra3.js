@@ -551,13 +551,13 @@ let handler = (e) => {
 			function select(){}
 			*/
 			{
-				if(((map[x][y+1]==-5||map[x+1][y]==-5||map[x-1][y]==-5)&&map[x][y]!=-5)||(1490-e.params.tick_num)/5<rmy)	{plan=fastget(map,x,y,[-5]);               log(myidx+' '+1+'\n')  }
-				else if(rr-4>rmy&&maphave(map,x,y,[-3,-4],6)&&e.params.bonuses.length!=0)																{plan=fastget(map,x,y,[-3,-4]);            log(myidx+' '+2+'\n')  }
-				else if(rr-4>rmy&&maphave(map,x,y,[-1],1)&&e.params.tick_num>1200)												{plan=fastget(map,x,y,[-1]);               log(myidx+' '+3+'\n')  }
-				else if(rr-4>rmy&&maphave(map,x,y,[3],5))												{plan=fastget(map,x,y,[-1]);               log(myidx+' '+3.5+'\n')  }
-				else if(rr-4>rmy)																							{plan=fastget(map,x,y,[0,3,-3,-4,-1]);     log(myidx+' '+4+'\n')  }
-				else if(map[x][y]!=-5)																						{plan=fastget(map,x,y,[-5]);               log(myidx+' '+5+'\n')  }
-				else		 																								{plan=fastget(map,x,y,[3]);                log(myidx+' '+6+'\n')  }
+				if(((map[x][y+1]==-5||map[x+1][y]==-5||map[x-1][y]==-5)&&map[x][y]!=-5)||(1490-e.params.tick_num)/5<rmy){plan=fastget(map,x,y,[-5]);               log(myidx+' '+1+'\n')  }
+				else if(rr-4>rmy&&maphave(map,x,y,[-3,-4],6)&&e.params.bonuses.length!=0)				{plan=fastget(map,x,y,[-3,-4]);            log(myidx+' '+2+'\n')  }
+				else if(rr-4>rmy&&maphave(map,x,y,[-1],1)&&e.params.tick_num>1200)					{plan=fastget(map,x,y,[-1]);               log(myidx+' '+3+'\n')  }
+				else if(rr-4>rmy&&maphave(map,x,y,[3],5))								{plan=fastget(map,x,y,[-1]);               log(myidx+' '+3.5+'\n')  }
+				else if(rr-4>rmy)											{plan=fastget(map,x,y,[0,3,-3,-4,-1]);     log(myidx+' '+4+'\n')  }
+				else if(map[x][y]!=-5)											{plan=fastget(map,x,y,[-5]);               log(myidx+' '+5+'\n')  }
+				else		 											{plan=fastget(map,x,y,[3]);                log(myidx+' '+6+'\n')  }
 			}//*/                                                                                                                                                        
 			//log(JSON.stringify(plan)+'\n');
 			//plan=bigget(map,x,y,e.params.players,Math.max(rr,minr),rmy,e.params.players.i.lines.length);
